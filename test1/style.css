@@ -1,0 +1,53 @@
+/* Customized for spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*Updated the padding of the body from 30px to 3px (Based on what I am seeing with the expected output)*/
+  padding: 3px;
+}
+header {
+  background: lightblue;
+}
+
+section {
+  background: lightgreen;
+  width: 75%;
+  float: left;
+}
+article {
+  background: white;
+  margin: 0 0 1rem 0;
+  /* Updated: inputted line-height*/
+  line-height: 2;
+}
+aside {
+  background: pink;
+  width: 25%;
+  float: right;
+}
+header,
+section,
+.module {
+  padding: 1rem;
+  /* Added padding for top and bottom to all parents */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+article {
+  padding: 25px 16px;
+}
+
+/* Fixed the padding for the section container */
+section {
+  padding-top: 16px;
+}
+
+/* Added margin at the Module text */
+.module h3 {
+  margin-bottom: 15px;
+}

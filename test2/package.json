@@ -1,0 +1,12 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "Make the page adaptable/responsive to any size of the screen.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o test2 test2/scss/style.scss -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,75 @@
+/* Import font (Roboto) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+
+
+:root {
+    --dark-grey: #555A5A;
+    --gradient-1: #DEDEDE;
+    --gradient-2: #AFAFAF;
+    --star-color: #898989;
+    --outer-color: #CCCCCC;
+    --border-color: #656565;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 410px;
+    height: 125px;
+    border: solid 3px white;
+    background: var(--outer-color);
+    border-radius: 25px;
+    z-index: -1;
+    box-shadow: 0px 0px 0px 3px var(--border-color);
+    
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--dark-grey);
+    background: linear-gradient(var(--gradient-1), var(--gradient-2));
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: var(--gradient-1);
+    padding: 25px 30px 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
+
+}
+
+a::before {
+    content: "\2605";
+    -webkit-text-stroke-width: 0px;
+    color: var(--star-color);
+    margin-right: 20px;
+
+}
+a::after {
+    content: "\2605";
+    -webkit-text-stroke-width: 0px;
+    color: var(--star-color);
+    margin-left: 20px;
+
+}
+
